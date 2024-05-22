@@ -1,21 +1,21 @@
 #include <iostream>
-    float luas_lingkaran(int r)
+    float luas_lingkaran(int jari_jari)
     {
         float phi = 3.14,luas;
-        luas = phi*r*r;
+        luas = phi * jari_jari * jari_jari;
         return luas;
     }
 
-    float keliling_lingkaran(int r)
+    float keliling_lingkaran(int jari_jari)
     {
         float phi = 3.14,keliling;
-        keliling = 2*phi*r;
+        keliling = 2* phi * jari_jari;
         return keliling;
     }
 int main()
 {
     awal: 
-    int r, pilihan;
+    int jari_jari, pilihan;
     char opsi;
 
     std::cout << "--------------------------------\n";
@@ -28,16 +28,16 @@ int main()
     std::cin >> pilihan;
 
     std::cout << "Masukkan Jari-Jari:";
-    std::cin >> r;
+    std::cin >> jari_jari;
 
     switch (pilihan)
     {
         case 1:
-        std::cout << "Luas Lingkaran: " <<luas_lingkaran(r) << "cm"<< std::endl;
+        std::cout << "Luas Lingkaran: " <<luas_lingkaran(jari_jari) << "cm"<< std::endl;
         break;
 
         case 2:
-        std::cout << "Keliling Lingkaran: " <<keliling_lingkaran(r) << "cm" << std::endl;
+        std::cout << "Keliling Lingkaran: " <<keliling_lingkaran(jari_jari) << "cm" << std::endl;
         break;
 
         default:
